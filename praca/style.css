@@ -1,8 +1,9 @@
 body {
     margin: 0;
-    padding: 0;
-}
+    padding: 0
+  }
   
+
 header{
     background: linear-gradient(to right, black 45%, orange);
     height: 75px;
@@ -22,5 +23,5 @@ header{
     background-color: #007bff;
     color: white;
     border: none;
-    cursor: pointer chuj;
+    cursor: pointer chuj 2137;
 }
