@@ -1,6 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+
 header{
     background: linear-gradient(to right, black, orange);
     float: left;
-    height: 100px;
+    height: 75px;
     width: 100%;
+    color: orange;
 }
