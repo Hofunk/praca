@@ -1,9 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-  }
+}
   
-
 header{
     background: linear-gradient(to right, black 45%, orange);
     height: 75px;
@@ -12,29 +11,19 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-header span.left{
-    float: left;
-    color: orange;
-    padding-left: 15px;
-}
- .logo {
+.logo {
             width: 100px;
             height: 100px;
             background-image: url('/images/icon.jpg');
             background-size: cover;
-        }
-        .button {
+}
+
+.button {
             padding: 10px 20px;
             background-color: #007bff;
             color: white;
             border: none;
             cursor: pointer;
-        }
-
-header span.right{
-    float: right;
-    color: black;
-    padding-right: 15px;
 }
 
 
