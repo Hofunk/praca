@@ -5,10 +5,18 @@ body {
   
 
 header{
-    background: linear-gradient(to right, black 45%, orange);
+    background: linear-gradient(to right, black -10%, rgb(194, 88, 1));
     height: 75px;
     width: 100%;
-    font-size: 26px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+footer{
+    background: linear-gradient(to right, black -10%, rgb(194, 88, 1));
+    height: 150px;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
