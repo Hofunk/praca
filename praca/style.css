@@ -17,20 +17,20 @@ header span.left{
     color: orange;
     padding-left: 15px;
 }
- .logo {
-            width: 100px;
-            height: 100px;
-            background-image: url('/images/icon.jpg');
-            background-size: cover;
-        }
-        .button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
 
+.logo {
+    width: 100px;
+    height: 100px;
+    background-image: url('i');
+    background-size: cover;
+}
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 header span.right{
     float: right;
     color: black;
