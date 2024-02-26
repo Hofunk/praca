@@ -5,9 +5,14 @@ body {
   
 
 header{
-    background: linear-gradient(to right, black, orange);
+    background: linear-gradient(to right, black 45%, orange);
     float: left;
     height: 75px;
     width: 100%;
     color: orange;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 15px;
 }
