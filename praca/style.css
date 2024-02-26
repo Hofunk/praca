@@ -12,14 +12,3 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-header span.left{
-    float: left;
-    color: orange;
-    padding-left: 15px;
-}
-
-header span.right{
-    float: right;
-    color: black;
-    padding-right: 15px;
-}
