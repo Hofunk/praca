@@ -25,11 +25,11 @@ footer{
 }
 
 .footer-segment:first-child {
-    margin-right: 600px;
+    margin-right: 20px;
 }
 
 .footer-segment:last-child {
-    margin-right: 100px;
+    margin-right: 200px;
 }
 
 .footer-subsegment:first-child {
