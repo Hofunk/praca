@@ -33,17 +33,14 @@ footer{
     margin-right: 0;
 }
 
-.footer-subsegment {
-    margin-bottom: 20px;
-}
-
 .footer-subsegment:first-child {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: -60px;
+    margin-top: 0;
     margin-left: 20px;
 }
 
 .footer-subsegment:last-child {
+    position: absolute;
     margin-bottom: 0;
     margin-left: 20px;
 }
