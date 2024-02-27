@@ -59,12 +59,16 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 10px;
     background-color: #f2f2f2;
 }
 
 .button {
-    background-color: #4CAF50;
+    
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -85,4 +89,14 @@ h3{
     width: 60px;
     height: 60px;
     object-fit: contain;
+}
+
+.button:first-child {
+    position: absolute;
+    left: 0;
+}
+
+.button:last-child {
+    position: absolute;
+    right: 0;
 }
