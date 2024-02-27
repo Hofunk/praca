@@ -15,13 +15,14 @@ header{
 
 footer{
     background: linear-gradient(to right, rgb(22, 22, 22) -10%, rgb(35, 35, 35));
-    height: 200px;
+    min-height: 200px;
     width: auto;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: space-between;
     display: flex;
     color: rgb(197, 197, 197);
+    overflow: auto;
 }
 
 .footer-segment:first-child {
@@ -39,7 +40,6 @@ footer{
 }
 
 .footer-subsegment:last-child {
-    position: absolute;
     margin-bottom: 0;
     margin-left: 20px;
 }
