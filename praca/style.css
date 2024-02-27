@@ -24,19 +24,18 @@ footer{
     color: rgb(197, 197, 197);
 }
 
-.footer-segment {
-    flex: 1;
+.footer-segment:first-child {
     margin-right: 20px;
 }
 
 .footer-segment:last-child {
-    margin-right: 0;
+    margin-left: 300px;
 }
 
 .footer-subsegment:first-child {
-    margin-bottom: -60px;
-    margin-top: 0;
-    margin-left: 20px;
+    margin-bottom: -30px;
+    margin-top: -60px;
+    margin-left: -160px;
 }
 
 .footer-subsegment:last-child {
