@@ -13,18 +13,18 @@ header{
     align-items: center;
 }
 
+.blok{
+    height: 673px;
+}
+
 footer{
     background: linear-gradient(to left, black -10%, rgb(194, 88, 1));
-    height: 150px;
+    height: 200px;
     width: 100%;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: space-between;
     display: flex;
-    padding: 20px;
-
-
-
 }
 
 .footer-segment {
@@ -40,8 +40,15 @@ footer{
     margin-bottom: 20px;
 }
 
+.footer-subsegment:first-child {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 .footer-subsegment:last-child {
     margin-bottom: 0;
+    margin-left: 20px;
 }
 h3{
     font-size: medium;
