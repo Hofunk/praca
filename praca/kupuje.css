@@ -51,6 +51,9 @@ h3{
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/banner.jpg);
     background-size: cover;
     background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .button-center{
@@ -135,7 +138,18 @@ h3{
 }
 
 .blok{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 25%;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: orange;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    padding: 30px;
 }
 
 @keyframes changeColor {
