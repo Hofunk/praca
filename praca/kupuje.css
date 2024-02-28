@@ -7,9 +7,6 @@
 header{
     height: 75px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
 }
 
@@ -57,15 +54,19 @@ h3{
 }
 
 .button-center{
-  position: center;
+    position: absolute;
+    margin-top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .button1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: inline-block;
-    position: relative;
+    position: absolute;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 20px;
+    margin-left: 200px;
     text-decoration: none;
     color: white;
     transition: all 0.3s ease;
@@ -97,19 +98,21 @@ h3{
 .button2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: inline-block;
-    position: relative;
+    position: absolute;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 20px;
+    margin-right: 200px;
     text-decoration: none;
-    color: white;
+    color: orange;
     transition: all 0.3s ease;
     vertical-align: middle;
+    right: 0;
 }
 
 .button2:hover{
     color: orange;
     transition: color 0.5s; 
-    animation: changeColor 0.5s; 
+    animation: changeColor1 0.5s; 
     animation-fill-mode: forwards;
 }
 
@@ -124,6 +127,7 @@ h3{
     bottom: -2px;
     right: 100;
     transition: width 0.5s;
+    width: 56px;
 }
 
 .button2:hover::before {
