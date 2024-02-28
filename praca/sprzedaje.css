@@ -71,18 +71,9 @@ h3{
     margin: 20px;
     margin-left: 200px;
     text-decoration: none;
-    color: white;
+    color: orange;
     transition: all 0.3s ease;
     vertical-align: middle;
-    animation: changeColorBack 0.5s; 
-    animation-fill-mode: forwards;
-}
-
-.button1:hover{
-    color: orange;
-    transition: color 0.5s; 
-    animation: changeColor 0.5s; 
-    animation-fill-mode: forwards;
 }
 
 .button1::before {
@@ -94,9 +85,6 @@ h3{
     bottom: 0;
     left: 100;
     transition: width 0.5s;
-}
-
-.button1:hover::before {
     width: 83px;
 }
 
