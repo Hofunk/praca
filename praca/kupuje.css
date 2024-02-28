@@ -58,7 +58,7 @@ h3{
 
 .button-center{
     position: absolute;
-    margin-top: -100px;
+    margin-top: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
