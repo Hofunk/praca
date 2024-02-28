@@ -31,9 +31,9 @@ footer{
 }
 
 .footer-subsegment:first-child {
-    margin-bottom: -30px;
-    margin-top: -60px;
-    margin-left: -160px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .footer-subsegment:last-child {
@@ -51,11 +51,14 @@ h3{
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/banner.jpg);
     background-size: cover;
     background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .button-center{
     position: absolute;
-    margin-top: -100px;
+    margin-top: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -71,6 +74,8 @@ h3{
     color: white;
     transition: all 0.3s ease;
     vertical-align: middle;
+    animation: changeColorBack 0.5s; 
+    animation-fill-mode: forwards;
 }
 
 .button1:hover{
@@ -109,15 +114,6 @@ h3{
     right: 0;
 }
 
-.button2:hover{
-    color: orange;
-    transition: color 0.5s; 
-    animation: changeColor1 0.5s; 
-    animation-fill-mode: forwards;
-}
-
-
-
 .button2::before {
     content: "";
     position: absolute;
@@ -130,12 +126,19 @@ h3{
     width: 56px;
 }
 
-.button2:hover::before {
-    width: 56px;
-}
-
 .blok{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 25%;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: orange;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    padding: 30px;
 }
 
 @keyframes changeColor {

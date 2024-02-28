@@ -13,6 +13,10 @@ header{
     position: absolute;
 }
 
+.img{
+    margin-top: 25px;
+}
+
 footer{
     background: linear-gradient(to right, rgb(22, 22, 22) -10%, rgb(35, 35, 35));
     min-height: 200px;
@@ -34,9 +38,9 @@ footer{
 }
 
 .footer-subsegment:first-child {
-    margin-bottom: -30px;
-    margin-top: -60px;
-    margin-left: -160px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .footer-subsegment:last-child {
