@@ -74,6 +74,8 @@ h3{
     color: white;
     transition: all 0.3s ease;
     vertical-align: middle;
+    animation: changeColorBack 0.5s; 
+    animation-fill-mode: forwards;
 }
 
 .button1:hover{
@@ -110,6 +112,15 @@ h3{
     transition: all 0.3s ease;
     vertical-align: middle;
     right: 0;
+    animation: changeColorBack 0.5s; 
+    animation-fill-mode: forwards;
+}
+
+.button2:hover{
+    color: orange;
+    transition: color 0.5s; 
+    animation: changeColor 0.5s; 
+    animation-fill-mode: forwards;
 }
 
 .button2::before {
@@ -121,6 +132,9 @@ h3{
     bottom: -2px;
     right: 100;
     transition: width 0.5s;
+}
+
+.button2:hover::before {
     width: 56px;
 }
 
