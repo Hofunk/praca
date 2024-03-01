@@ -81,6 +81,7 @@ td,tr{
 }
 */
 .blok{
+    position: relative;
     display: flex;
     width: 50%;
     height: 25%;
@@ -94,19 +95,19 @@ td,tr{
 }
 
 .button-left{
-    height: 6%;
-    width: 10%;
+    height: 10%;
+    width: 14%;
     position: absolute;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    vertical-align: middle;
+    bottom: 2em;
+    left: 3em;
+    font-size: 2vw;
 }
 
 .button-right{
-    height: 6%;
-    width: 10%;
+    height: 10%;
+    width: 14%;
     position: absolute;
-    margin-bottom: 20px;
-    margin-right: 30px;
-    vertical-align: middle;
+    bottom: 2em;
+    right: 4em;
+    font-size: 2vw;
 }
