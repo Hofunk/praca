@@ -3,13 +3,6 @@
     padding: 0
   }
   
-
-header{
-    height: 75px;
-    width: 100%;
-    position: absolute;
-}
-
 footer{
     background: linear-gradient(to right, rgb(22, 22, 22) -10%, rgb(35, 35, 35));
     min-height: 200px;
@@ -137,7 +130,7 @@ h3{
     border-color: orange;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2vw;
+    font-size: 4vw;
     padding: 30px;
 }
 
