@@ -130,7 +130,7 @@ h3{
     border-color: orange;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4vw;
+    font-size: 2vw;
     padding: 30px;
 }
 
@@ -156,5 +156,9 @@ h3{
         position: absolute;
         margin-top: 6em;
         transform: translateX(-50%);
+      }
+
+      [class*="blok"]{
+        font-size: 4vw;
       }
     }
