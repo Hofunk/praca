@@ -13,15 +13,27 @@ footer{
     display: flex;
     color: rgb(197, 197, 197);
     flex-wrap: wrap;
+    position: relative;
 }
 
 .footer-segment:first-child {
-    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
     flex-basis: 48%;
 }
 
 .footer-segment:last-child {
-    margin-right: 20px;
+    top: 20px;
+    bottom: 20px;
+    flex-basis: 48%;
+    position: absolute;
+    right: 50px;
+}
+.footer-segmentmid {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
     flex-basis: 48%;
 }
 
@@ -33,7 +45,8 @@ footer{
 }
 
 .footer-subsegment:last-child {
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
     margin-left: 20px;
     flex-basis: 100%;
 }
@@ -165,4 +178,12 @@ h3{
       [class*="blok"]{
         font-size: 4vw;
       }
+    }
+
+@media only screen and (min-width: 768px) {
+    [class*="footer-segmentmid"]{
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+          }
     }
