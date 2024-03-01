@@ -91,6 +91,7 @@ h3{
     height: 2px;
     background-color: orange;
     width: 0%;
+    bottom: 0;
     left: 100;
     transition: width 0.5s;
 }
@@ -120,6 +121,7 @@ h3{
     background-color: orange;
     width: 0%;
     bottom: -2px;
+    right: 100;
     transition: width 0.5s;
     width: 56px;
 }
