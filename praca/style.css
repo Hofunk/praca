@@ -100,7 +100,7 @@ td,tr{
     position: absolute;
     bottom: 2em;
     left: 3em;
-    font-size: 2vw;
+    font-size: 1em;
 }
 
 .button-right{
@@ -109,5 +109,12 @@ td,tr{
     position: absolute;
     bottom: 2em;
     right: 4em;
-    font-size: 2vw;
+    font-size: 1em;
 }
+
+@media only screen and (max-width: 768px) {
+[class*="button-"]{
+    font-size: 2em;
+  }
+}
+
