@@ -12,26 +12,30 @@ footer{
     justify-content: space-between;
     display: flex;
     color: rgb(197, 197, 197);
-    overflow: auto;
+    flex-wrap: wrap;
 }
 
 .footer-segment:first-child {
     margin-right: 20px;
+    flex-basis: 48%;
 }
 
 .footer-segment:last-child {
-    margin-right: 200px;
+    margin-right: 20px;
+    flex-basis: 48%;
 }
 
 .footer-subsegment:first-child {
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 20px;
+    flex-basis: 100%;
 }
 
 .footer-subsegment:last-child {
     margin-bottom: 0;
     margin-left: 20px;
+    flex-basis: 100%;
 }
 
 h3{
