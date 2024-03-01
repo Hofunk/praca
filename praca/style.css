@@ -52,13 +52,17 @@ h3{
     font-size: medium;
 }
 
-.blok{
+.banner{
     width: auto;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/banner.jpg);
     background-size: cover;
     background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
+/*
 table{
     border-style: dotted;
     border-color: darkorange;
@@ -67,10 +71,42 @@ table{
     border-collapse: collapse;
     border: 5px;
 }
+
 td,tr{
     border-style: dotted;
     padding: 8px;
     border-color: orange;
     
     
+}
+*/
+.blok{
+    display: flex;
+    width: 50%;
+    height: 25%;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: orange;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    padding: 30px;
+}
+
+.button-left{
+    height: 6%;
+    width: 10%;
+    position: absolute;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+.button-right{
+    height: 6%;
+    width: 10%;
+    position: absolute;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    vertical-align: middle;
 }
