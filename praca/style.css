@@ -86,7 +86,7 @@ h3 {
     position: relative;
     display: flex;
     width: 50%;
-    height: 25%;
+    min-height: 25%;
     border-style: solid;
     border-radius: 20px;
     border-color: orange;
@@ -101,10 +101,10 @@ h3 {
 }
 
 .button-left {
-    height: 10%;
-    width: 14%;
+    height: 1.5em;
+    width: 4em;
     position: absolute;
-    bottom: 1em;
+    bottom: -4em;
     left: 3em;
     font-size: 1em;
     background-color: none;
@@ -126,10 +126,10 @@ h3 {
 }
 
 .button-right {
-    height: 10%;
-    width: 14%;
+    height: 1.5em;
+    width: 4em;
     position: absolute;
-    bottom: 1em;
+    bottom: -4em;
     right: 3em;
     margin-left: 1em;
     font-size: 1em;
@@ -152,10 +152,10 @@ h3 {
 }
 
 .button-center {
-    height: 10%;
-    width: 14%;
+    height: 1.5em;
+    width: 4em;
     position: absolute;
-    bottom: 1em;
+    bottom: -4em;
     transform: translateX(-50%);
     left: 50%;
     font-size: 1em;
@@ -178,17 +178,23 @@ h3 {
 }
 
 .custom-h1 {
-    font-size: 23px;
+    font-size: 1em;
     text-align: center;
-    color: darkorange;
+    color: white;
 }
 
 @media only screen and (max-width: 768px) {
     [class*="button-"] {
-        font-size: 1.7em;
-        padding: 1em;
-        height: 0.7em;
+        font-size: 1.2em;
+        padding: 1.1em;
+        height: 0.8em;
 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="custom-h1"] {
+        font-size: 1.6em;
     }
 }
 
