@@ -86,23 +86,67 @@ h3{
     height: 10%;
     width: 14%;
     position: absolute;
-    bottom: 2em;
+    bottom: 1em;
     left: 3em;
     font-size: 1em;
+    background-color: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    padding: 0.4em;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.button-left:hover{
+    transition: background-color 0.5s; 
+    animation: changeColor 0.5s; 
+    animation-fill-mode: forwards;
 }
 
 .button-right{
     height: 10%;
     width: 14%;
     position: absolute;
-    bottom: 2em;
-    right: 4em;
+    bottom: 1em;
+    right: 3em;
+    margin-left: 1em;
     font-size: 1em;
+    background-color: none;
+    color: white;
+    text-decoration: none;
+    background-color: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    padding: 0.4em;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.button-right:hover{
+    transition: background-color 0.5s; 
+    animation: changeColor 0.5s; 
+    animation-fill-mode: forwards;
 }
 
 @media only screen and (max-width: 768px) {
 [class*="button-"]{
-    font-size: 2em;
+    font-size: 1.7em;
+    padding: 1em;
+    height: 0.7em;
+    
   }
+}
+
+@keyframes changeColor {
+    0% { background-color: none; }
+    100% { background-color: orange; }
 }
 
