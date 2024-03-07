@@ -87,22 +87,6 @@ h3{
     padding: 30px;
 }
 
-.imgrot{
-    animation-name: rotateBack;
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-}
-
-.imgrot:hover{
-    animation-name: rotate;
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-    }
-
 .dropdown {
         position: absolute;
         display: inline-block;
@@ -126,6 +110,7 @@ h3{
 .dropdown:hover .dropdown-content {
     display: block;
     animation-name: fadeIN;
+    animation-name: slideIN;
     animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -136,15 +121,10 @@ h3{
     color: white;
 }
 
-@keyframes rotate {
-        0% { transform: rotateZ(90deg); }
-        100% { transform: rotateZ(0deg); }
+@keyframes slideIN {
+        0% { right: 0;}
+        100% { right: 20px}
       }
-
-@keyframes rotateBack {
-    0% { transform: rotateZ(0deg); }
-    100% { transform: rotateZ(90deg); }
-}
 
 @keyframes fadeIN {
     0% { opacity: 0; }
