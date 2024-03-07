@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(197, 197, 197);
+    text-decoration: none;
   }
   
 footer{
@@ -98,7 +100,7 @@ h3{
 .dropdown-content {
     display: none;
     position: relative;
-    background-color: rgba(255, 116, 2, 0.212);
+    background-color: rgba(255, 115, 0, 0.15);
     border-radius: 10px;
     text-decoration: none;
     min-width: 2em;
@@ -106,20 +108,20 @@ h3{
     padding: 12px 16px;
     z-index: 1;
     }
+
+.dropdown-content:hover{
+    background-color: ;
+}
       
 .dropdown:hover .dropdown-content {
     display: block;
     animation-name: fadeIN;
     animation-name: slideIN;
-    animation-duration: 0.7s;
+    animation-duration: 0.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-direction: normal;
     }
-
-.button1 .button2{
-    color: white;
-}
 
 @keyframes slideIN {
         0% { right: 0;}
