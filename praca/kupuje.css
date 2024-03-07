@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
 footer{
@@ -8,20 +9,31 @@ footer{
     min-height: 200px;
     width: auto;
     font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: space-between;
     display: flex;
     color: rgb(197, 197, 197);
     flex-wrap: wrap;
+    position: relative;
 }
 
 .footer-segment:first-child {
-    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
     flex-basis: 48%;
 }
 
 .footer-segment:last-child {
-    margin-right: 20px;
+    top: 20px;
+    bottom: 20px;
+    flex-basis: 48%;
+    position: absolute;
+    right: 50px;
+}
+.footer-segmentmid {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
     flex-basis: 48%;
 }
 
@@ -29,13 +41,14 @@ footer{
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 20px;
-    flex-basis: 100%
+    flex-basis: 100%;
 }
 
 .footer-subsegment:last-child {
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
     margin-left: 20px;
-    flex-basis: 100%
+    flex-basis: 100%;
 }
 
 h3{
@@ -60,69 +73,6 @@ h3{
     transform: translateX(-50%);
 }
 
-.button1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: inline-block;
-    position: absolute;
-    padding: 10px 20px;
-    margin: 20px;
-    margin-left: 200px;
-    text-decoration: none;
-    color: white;
-    transition: all 0.3s ease;
-    vertical-align: middle;
-    animation: changeColorBack 0.5s; 
-    animation-fill-mode: forwards;
-}
-
-.button1:hover{
-    color: orange;
-    transition: color 0.5s; 
-    animation: changeColor 0.5s; 
-    animation-fill-mode: forwards;
-}
-
-.button1::before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: orange;
-    width: 0%;
-    bottom: 0;
-    left: 100;
-    transition: width 0.5s;
-}
-
-.button1:hover::before {
-    width: 83px;
-}
-
-.button2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: inline-block;
-    position: absolute;
-    padding: 10px 20px;
-    margin: 20px;
-    margin-right: 200px;
-    text-decoration: none;
-    color: orange;
-    transition: all 0.3s ease;
-    vertical-align: middle;
-    right: 0;
-}
-
-.button2::before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: orange;
-    width: 0%;
-    bottom: -2px;
-    right: 100;
-    transition: width 0.5s;
-    width: 56px;
-}
-
 .blok{
     display: flex;
     justify-content: center;
@@ -133,38 +83,82 @@ h3{
     border-radius: 20px;
     border-color: orange;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2vw;
     padding: 30px;
 }
 
+ul {
+    list-style: none;
+    background: none;
+    position: absolute;
+    right: 20px;
+    border-radius: 5px;
+    }
+
+    ul li {
+    display: inline-block;
+    position: relative;
+    }
+
+    ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    width: 5em;
+    margin-top: 10px;
+    }
+
+    ul li ul.dropdown li {
+    display: block;
+    }
+
+    ul li ul.dropdown {
+    width: 100%;
+    background: none;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    }
+
+    ul li a:hover {
+    border-radius: 5px;
+    background-color: none;
+    transition: color 1s; 
+    animation: changeColor 0.5s; 
+    animation-fill-mode: forwards;
+    }
+
+    ul li:hover ul.dropdown {
+    display: block;
+    }
+
+    .button2{
+        color: orange;
+    }
+
 @keyframes changeColor {
-    0% { color: white; }
-    100% { color: orange; }
+    0% { background-color: none; }
+    100% { background-color: rgba(243, 148, 5, 0.185); }
 }
 
 @keyframes changeColorBack {
-    0% { color: orange; }
-    100% { color: white; }
+    0% { background-color: rgba(243, 148, 5, 0.185); }
+    100% { background-color: none; }
 }
 
 @media only screen and (max-width: 768px) {
-    [class*="button1"]{
-        font-size: 1em;
-        position: absolute;
-        margin-top: 6em;
-      }
-
-      [class*="button2"]{
-        font-size: 1em;
-        position: absolute;
-        margin-top: 6em;
-        transform: translateX(-50%);
-      }
-
       [class*="blok"]{
         font-size: 4vw;
       }
     }
 
-    
+@media only screen and (min-width: 768px) {
+    [class*="footer-segmentmid"]{
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+          }
+    }
