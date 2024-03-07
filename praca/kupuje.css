@@ -4,9 +4,9 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(197, 197, 197);
     text-decoration: none;
-  }
-  
-footer{
+}
+
+footer {
     background: linear-gradient(to right, rgb(22, 22, 22) -10%, rgb(35, 35, 35));
     min-height: 200px;
     width: auto;
@@ -32,6 +32,7 @@ footer{
     position: absolute;
     right: 50px;
 }
+
 .footer-segmentmid {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -53,11 +54,11 @@ footer{
     flex-basis: 100%;
 }
 
-h3{
+h3 {
     font-size: medium;
 }
 
-.banner{
+.banner {
     width: auto;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/banner.jpg);
@@ -68,14 +69,14 @@ h3{
     display: flex;
 }
 
-.button-center{
+.button-center {
     position: absolute;
     margin-top: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.blok{
+.blok {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,13 +91,13 @@ h3{
 }
 
 .dropdown {
-        position: absolute;
-        display: inline-block;
-        right: 50px;
-        top: 20px;
-        text-align: right;
-    }
-      
+    position: absolute;
+    display: inline-block;
+    right: 50px;
+    top: 20px;
+    text-align: right;
+}
+
 .dropdown-content {
     display: none;
     position: relative;
@@ -108,12 +109,12 @@ h3{
     padding: 12px 16px;
     margin-top: 10px;
     z-index: 1;
-    }
+}
 
-.dropdown-content:hover{
+.dropdown-content:hover {
     background-color: rgba(255, 174, 0, 0.1);
 }
-      
+
 .dropdown:hover .dropdown-content {
     display: block;
     animation-name: slideIN;
@@ -121,32 +122,44 @@ h3{
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-direction: normal;
-    }
+}
 
-.button2{
+.button2 {
     color: orange;
 }
 
 @keyframes slideIN {
-        0% { right: 0; opacity: 0;}
-        100% { right: 20px; opacity: 1;}
-      }
+    0% {
+        right: 0;
+        opacity: 0;
+    }
+
+    100% {
+        right: 20px;
+        opacity: 1;
+    }
+}
 
 @keyframes fadeIN {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 @media only screen and (max-width: 768px) {
-      [class*="blok"]{
+    [class*="blok"] {
         font-size: 4vw;
-      }
     }
+}
 
 @media only screen and (min-width: 768px) {
-    [class*="footer-segmentmid"]{
-            position: absolute;
-            transform: translateX(-50%);
-            left: 50%;
-          }
+    [class*="footer-segmentmid"] {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
     }
+}

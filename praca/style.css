@@ -1,10 +1,10 @@
 * {
     margin: 0;
     padding: 0
-  }
-  
+}
 
-aaheader{
+
+aaheader {
     height: 75px;
     width: 100%;
     display: flex;
@@ -13,14 +13,14 @@ aaheader{
     position: absolute;
 }
 
-.img{
+.img {
     position: absolute;
     margin-top: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-footer{
+footer {
     background: linear-gradient(to right, rgb(22, 22, 22) -10%, rgb(35, 35, 35));
     min-height: 200px;
     width: auto;
@@ -47,6 +47,7 @@ footer{
     position: absolute;
     right: 50px;
 }
+
 .footer-segmentmid {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -68,11 +69,11 @@ footer{
     flex-basis: 100%;
 }
 
-h3{
+h3 {
     font-size: medium;
 }
 
-.banner{
+.banner {
     width: auto;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/banner.jpg);
@@ -81,7 +82,7 @@ h3{
     position: relative;
 }
 
-.blok{
+.blok {
     position: relative;
     display: flex;
     width: 50%;
@@ -99,7 +100,7 @@ h3{
     top: 30%;
 }
 
-.button-left{
+.button-left {
     height: 10%;
     width: 14%;
     position: absolute;
@@ -113,18 +114,18 @@ h3{
     border-color: white;
     border-style: solid;
     padding: 0.4em;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.button-left:hover{
-    transition: background-color 0.5s; 
-    animation: changeColor 0.5s; 
+.button-left:hover {
+    transition: background-color 0.5s;
+    animation: changeColor 0.5s;
     animation-fill-mode: forwards;
 }
 
-.button-right{
+.button-right {
     height: 10%;
     width: 14%;
     position: absolute;
@@ -142,40 +143,72 @@ h3{
     border-color: white;
     border-style: solid;
     padding: 0.4em;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.button-right:hover{
-    transition: background-color 0.5s; 
-    animation: changeColor 0.5s; 
+.button-right:hover {
+    transition: background-color 0.5s;
+    animation: changeColor 0.5s;
     animation-fill-mode: forwards;
 }
 
-@media only screen and (max-width: 768px) {
-[class*="button-"]{
-    font-size: 1.7em;
-    padding: 1em;
-    height: 0.7em;
-    
-  }
+.button-center {
+    height: 10%;
+    width: 14%;
+    position: absolute;
+    bottom: 1em;
+    transform: translateX(-50%);
+    left: 50%;
+    font-size: 1em;
+    background-color: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    padding: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media only screen and (min-width: 768px) {
-    [class*="footer-segmentmid"]{
-            position: absolute;
-            transform: translateX(-50%);
-            left: 50%;
-          }
-    }
-    
-@keyframes changeColor {
-    0% { background-color: none; }
-    100% { background-color: orange; }
+.button-left:hover {
+    transition: background-color 0.5s;
+    animation: changeColor 0.5s;
+    animation-fill-mode: forwards;
 }
+
 .custom-h1 {
     font-size: 23px;
     text-align: center;
     color: darkorange;
-  }
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="button-"] {
+        font-size: 1.7em;
+        padding: 1em;
+        height: 0.7em;
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    [class*="footer-segmentmid"] {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: none;
+    }
+
+    100% {
+        background-color: orange;
+    }
+}
