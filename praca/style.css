@@ -174,3 +174,8 @@ h3{
     0% { background-color: none; }
     100% { background-color: orange; }
 }
+.custom-h1 {
+    font-size: 23px;
+    text-align: center;
+    color: darkorange;
+  }
