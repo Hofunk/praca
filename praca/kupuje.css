@@ -139,6 +139,27 @@ ul {
         color: orange;
     }
 
+    .imgrot{
+        transform: rotateZ(90deg);
+    }
+
+    .imgrot:hover{
+        animation: ver-rotate 1s;
+    }
+    
+
+@keyframes ver-rotate{
+from
+{
+transform: rotateZ(90deg);
+}
+to
+{
+transform: rotateZ(0deg);
+}
+
+}
+
 @keyframes changeColor {
     0% { background-color: none; }
     100% { background-color: rgba(243, 148, 5, 0.185); }
