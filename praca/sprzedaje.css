@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(197, 197, 197);
+    text-decoration: none;
   }
   
 footer{
@@ -87,67 +89,53 @@ h3{
     padding: 30px;
 }
 
-ul {
-    list-style: none;
-    background: none;
-    position: absolute;
-    right: 20px;
-    border-radius: 5px;
+.dropdown {
+        position: absolute;
+        display: inline-block;
+        right: 50px;
+        top: 20px;
+        text-align: right;
     }
-
-    ul li {
-    display: inline-block;
-    position: relative;
-    }
-
-    ul li a {
-    display: block;
-    padding: 20px 25px;
-    color: #FFF;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.2em;
-    width: 5em;
-    margin-top: 10px;
-    }
-
-    ul li ul.dropdown li {
-    display: block;
-    }
-
-    ul li ul.dropdown {
-    width: 100%;
-    background: none;
-    position: absolute;
-    z-index: 999;
+      
+.dropdown-content {
     display: none;
+    position: relative;
+    background-color: rgba(255, 174, 0, 0.15);
+    border-radius: 10px;
+    text-decoration: none;
+    min-width: 2em;
+    font-size: 1.2em;
+    padding: 12px 16px;
+    margin-top: 10px;
+    z-index: 1;
     }
 
-    ul li a:hover {
-    border-radius: 5px;
-    background-color: none;
-    transition: color 1s; 
-    animation: changeColor 0.5s; 
-    animation-fill-mode: forwards;
-    }
-
-    ul li:hover ul.dropdown {
+.dropdown-content:hover{
+    background-color: rgba(255, 174, 0, 0.1);
+}
+      
+.dropdown:hover .dropdown-content {
     display: block;
+    animation-name: slideIN;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
     }
 
     .button1{
         color: orange;
     }
 
-@keyframes changeColor {
-    0% { background-color: none; }
-    100% { background-color: rgba(243, 148, 5, 0.185); }
-}
+@keyframes slideIN {
+        0% { right: 0; opacity: 0;}
+        100% { right: 20px; opacity: 1;}
+      }
 
-@keyframes changeColorBack {
-    0% { background-color: rgba(243, 148, 5, 0.185); }
-    100% { background-color: none; }
-}
+@keyframes fadeIN {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 @media only screen and (max-width: 768px) {
       [class*="blok"]{
