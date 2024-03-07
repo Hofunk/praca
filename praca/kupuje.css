@@ -87,88 +87,69 @@ h3{
     padding: 30px;
 }
 
-ul {
-    list-style: none;
-    background: none;
-    position: absolute;
-    right: 20px;
-    border-radius: 5px;
-    }
-
-    ul li {
-    display: inline-block;
-    position: relative;
-    }
-
-    ul li a {
-    display: block;
-    padding: 20px 25px;
-    color: #FFF;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.2em;
-    width: 5em;
-    margin-top: 10px;
-    }
-
-    ul li ul.dropdown li {
-    display: block;
-    }
-
-    ul li ul.dropdown {
-    width: 100%;
-    background: none;
-    position: absolute;
-    z-index: 999;
-    display: none;
-    }
-
-    ul li a:hover {
-    border-radius: 5px;
-    background-color: none;
-    transition: color 1s; 
-    animation: changeColor 0.5s; 
+.imgrot{
+    animation-name: rotateBack;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
     animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+.imgrot:hover{
+    animation-name: rotate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
     }
 
-    ul li:hover ul.dropdown {
+.dropdown {
+        position: absolute;
+        display: inline-block;
+        right: 50px;
+        top: 20px;
+        text-align: right;
+    }
+      
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: rgba(255, 116, 2, 0.212);
+    border-radius: 10px;
+    text-decoration: none;
+    min-width: 2em;
+    font-size: 1.2em;
+    padding: 12px 16px;
+    z-index: 1;
+    }
+      
+.dropdown:hover .dropdown-content {
     display: block;
+    animation-name: fadeIN;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
     }
 
-    .button2{
-        color: orange;
-    }
-
-    .imgrot{
-        transform: rotateZ(90deg);
-    }
-
-    .imgrot:hover{
-        animation: ver-rotate 1s;
-    }
-    
-
-@keyframes ver-rotate{
-from
-{
-transform: rotateZ(90deg);
-}
-to
-{
-transform: rotateZ(0deg);
+.button1 .button2{
+    color: white;
 }
 
+@keyframes rotate {
+        0% { transform: rotateZ(90deg); }
+        100% { transform: rotateZ(0deg); }
+      }
+
+@keyframes rotateBack {
+    0% { transform: rotateZ(0deg); }
+    100% { transform: rotateZ(90deg); }
 }
 
-@keyframes changeColor {
-    0% { background-color: none; }
-    100% { background-color: rgba(243, 148, 5, 0.185); }
-}
-
-@keyframes changeColorBack {
-    0% { background-color: rgba(243, 148, 5, 0.185); }
-    100% { background-color: none; }
-}
+@keyframes fadeIN {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 @media only screen and (max-width: 768px) {
       [class*="blok"]{
