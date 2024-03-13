@@ -61,7 +61,7 @@ h3 {
 .banner {
     width: auto;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/banner.jpg);
+background-color: black;
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -82,9 +82,8 @@ h3 {
     align-items: center;
     width: 50%;
     height: 25%;
-    border-style: solid;
     border-radius: 20px;
-    border-color: orange;
+    
     color: white;
     font-size: 2vw;
     padding: 30px;
@@ -173,4 +172,9 @@ h3 {
         left: 10px;
         top: 10px;
     }
+}
+.custom-h1 {
+    font-size: 1em;
+    text-align: center;
+    color: white;
 }
