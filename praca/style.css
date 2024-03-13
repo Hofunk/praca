@@ -79,29 +79,13 @@ h3 {
 .banner {
     width: auto;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/banner.jpg);
+background-color: black;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-.blok {
-    position: relative;
-    display: flex;
-    width: 50%;
-    min-height: 25%;
-    border-style: solid;
-    border-radius: 20px;
-    border-color: orange;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2vw;
-    padding: 30px;
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    top: 30%;
-}
+
 
 .button-left {
     height: 1.5em;
@@ -213,4 +197,36 @@ h3 {
     100% {
         background-color: orange;
     }
+}
+.blok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    min-height: 25%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    padding: 30px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 20%;
+}
+
+.button-left, .button-center, .button-right {
+    margin: 10px 5px; /* Dodaje odstęp między przyciskami */
+    position: relative; /* Zmiana z 'absolute' na 'relative' */
+    bottom: auto; /* Usunięcie wartości */
+    left: auto; /* Usunięcie wartości */
+    transform: none; /* Usunięcie wartości */
+}
+
+/* Nowa klasa dla kontenera przycisków */
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 }
