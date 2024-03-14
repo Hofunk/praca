@@ -237,5 +237,6 @@ h3 {
 .button-1{
     width: 7em; 
     height: 7em;
-padding: 1em;
+    margin-left: 0.8em;
+    margin-bottom: 1em;
 }
