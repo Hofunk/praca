@@ -85,7 +85,22 @@ h3 {
     position: relative;
 }
 
-
+.blok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    min-height: 25%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    padding: 30px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 20%;
+}
 
 .button-left {
     height: 1.5em;
@@ -217,20 +232,5 @@ h3 {
         background-color: orange;
     }
 }
-.blok {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    min-height: 25%;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2vw;
-    padding: 30px;
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    top: 20%;
-}
+
 
