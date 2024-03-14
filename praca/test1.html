@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Obrazek jako Przycisk</title>
+<style>
+ body, html {
+    
+    margin: 0;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: right;
+    padding: 10px 20px; /* Dostosowane marginesy */
+  }
+  .footer img {
+    width: 200px; /* Możesz dostosować rozmiar obrazka */
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.2s; /* Animacja powiększenia */
+    padding-right: 1%;
+  }
+  .footer img:hover {
+    transform: scale(1.1); /* Lekkie powiększenie przy najechaniu */
+  }
+  .tooltip {
+    position: absolute;
+    top: 0;
+    right: 0; /* Można dostosować, aby tekst był dokładnie tam, gdzie chcesz */
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    padding-right: 5%;
+  }
+  .image-container:hover .tooltip {
+    visibility: visible;
+  }
+</style>
+</head>
+<body>
+
+<div class="footer">
+  <div class="image-container" onclick="window.location.href='http://adres_docelowy.pl';">
+    <img src="images/lokalizacja.png" alt="Obrazek-Przycisk">
+    <div class="tooltip">Tu nas znajdziesz</div>
+  </div>
+</div>
+
+</body>
+</html>
