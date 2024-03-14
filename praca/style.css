@@ -78,7 +78,7 @@ h3 {
 
 .banner {
     width: auto;
-    min-height: 1000px;
+    min-height: 60em;
     background-color: black;
     background-size: cover;
     background-position: center;
