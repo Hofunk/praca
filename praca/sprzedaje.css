@@ -60,7 +60,7 @@ h3 {
 
 .banner {
     width: auto;
-    height: 100vh;
+    min-height: 60em;
     background-color: black;
     background-size: cover;
     background-position: center;
