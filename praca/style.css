@@ -78,8 +78,8 @@ h3 {
 
 .banner {
     width: auto;
-    height: 100vh;
-background-color: black;
+    min-height: 1000px;
+    background-color: black;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -171,11 +171,26 @@ background-color: black;
 }
 
 @media only screen and (max-width: 768px) {
-    [class*="button-"] {
+
+    [class*="button-left"] {
         font-size: 1.2em;
         padding: 1.1em;
         height: 0.8em;
+        left: 2em;
+    }
 
+    [class*="button-right"] {
+        font-size: 1.2em;
+        padding: 1.1em;
+        height: 0.8em;
+        right: 2em;
+    }
+
+    [class="button-center"] {
+        font-size: 1.2em;
+        padding: 1.1em;
+        height: 0.8em;
+        bottom: -6em;
     }
 
     [class*="custom-h1"] {
@@ -186,6 +201,10 @@ background-color: black;
         position: relative;
         transform: translateX(-50%);
         left: 30%;
+    }
+
+    [footer] {
+        nav-down: auto;
     }
 }
 
